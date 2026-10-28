@@ -1,57 +1,41 @@
 // script.js : 내 영화 평점 통계(콘솔판)
 // 작성자 : 이윤(2651051)
-const titles = ["미션임파서블", "미션임파서블: 로그네이션", "제목3", "미션 임파서블2", "미션 임파서블3"];
+const titles - ["미션임파서블", "미션임파서블: 로그네이션", "제목3", "미션 임파서블2", "미션 임파서블3"];
 const ratings = [8.4, 7.9, 9.0, 6.5, 8.1];
 const years = [2014, 2019, 1994, 2023, 2008];
-let sum = 0;
-for (let i = 0; i < ratings.length; i++) {
- sum = sum + ratings[i];
+let sum = 0; 
+for (let i= 0; i < ratings.length; i++) {
+ sum - sum + ratings[i];
 }
-console.log("합계:", sum);
-
-
-
-
-
-// document.write("외부 스크립트 방법");
-
-console.log("콘솔창에 나와야 하는 내용");
-
-var num = 10 + 20;
-
-console.log(num);
-                                                                  
-let sum = 80 + 1234;
-
-console.log(sum);
-
-let string1 = "Hello, World";
-let string2 = '시네마 웹사이트 "Cinema Website"에 오신 것을 환영합니다.';
-console.log(string1, string2);
-
-let dan = 3;
-let gugu = 8;
-let string = `${dan} 곱하기 $(gugu)은/는 ${dan * gugu}입니다.`;
-console.log(string);
-
-let studentScore = [80, 70, 90, 60];
-
-console.log(studentScore);
-console.log(studentScore[2]);
-
-let stdScore ={
-    koreanScore: 80,
-    englishScore: 70,
-    mathScore: 90,
-    scienceScore: 60
-};
-
-console.log(stdScore);
-console.log(stdScore.koreanScore);
-
-for(dan = 2; dan<=9; dan++){
-   for(let i=1; i<=9; i++){
-       console.log(`${dan} X ${i} = ${dan * i}`);
-    }
-    console.log(' ');
-}
+console.1og("합계:", Sum);
+const average = sum / ratings.length;
+console.log("평균:", average); 
+let max = ratings[0]; 
+let maxindex = 0; 
+let count = 0; 
+for(i=0; i< ratings.length; ir){
+   if(ratings[i]>max){
+     max-ratings[i]; 
+     maxIndex =i;
+   }
+ if (ratings[i] >= 8) count++;
+ console.log("8점 이상:", count + "편");
+ console.log("최고: ", titles[maxIndex], max)
+  
+ for(i=8; i< ratings.length; i++){
+     let label; 
+     if(ratings[i]>=8.5){
+      label = "명작";
+     }
+     else if(ratings[i] >=7){
+        label = "추천";
+     }
+     else{ 
+         label="보통";
+     }
+  console.log(titles[i]+"(" + years[i]+ "): "+ raitngs[i]+" "+label)
+ }
+ 
+ const avgText = average. toFixed(1); 
+ const best = titles[maxIndex]; 
+ alert(내 영화 $[titles.length)편, 평균 $(avgrext]점, 최고는 $[best)");
